@@ -35,9 +35,6 @@ a {
   color: white;
 }
 
-p {
-  color: white;
-}
 
 .container {
   max-width: 1300;
@@ -93,18 +90,12 @@ p {
   margin-top: 70px;
 }
 
-.categories {
-  margin: 70px;
-}
 
-.col-3 {
-  flex-basis: 25%;
-  min-width: 150px;
-  margin-bottom: 25px;
-}
+
 
 .header-container {
-  text-align: left; /*left aligns the header */
+  text-align: left;
+  /*left aligns the header */
   margin-top: 40px;
   margin-bottom: 40px;
   padding-left: 25px;
@@ -114,32 +105,131 @@ p {
 
 h1 {
   display: inline-block;
-  transition: color 0.3s; /* Add a color transition on hover */
+  transition: color 0.3s;
+  /* Add a color transition on hover */
 }
 
 h1:hover {
-  color: red; /* Change the color on hover (adjust as needed) */
+  color: red;
 }
 
 .scrolling-marquee img {
-  width: 200px; /* Adjust the width as needed */
-  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  width: 200px;
+  /* Adjust the width as needed */
+  height: auto;
+  /* Automatically adjust the height to maintain aspect ratio */
 }
 
-.small-container{
-  max-width: 1080px;
-  margin: auto;
+
+
+
+
+
+
+/* Style for the store container */
+.store-container {
+  text-align: left;
+  /* Center align text */
   padding-left: 25px;
   padding-right: 25px;
 }
 
-.col-4{
-  flex-basis: 25px;
-  padding: 25%;
-  min-width: 200px;
-  margin-bottom: 50px;
+/* Style for individual items */
+.item {
+  display: inline-block;
+  /* Display items side by side */
+  margin: 10px;
+  /* Add margin around each item */
+  text-align: center;
+  /* Center align item content */
+  border: 1px solid #ccc;
+  /* Add a border */
+  padding: 10px;
+  /* Add padding within the item */
+  width: 200px;
+  /* Set a fixed width for each item */
+  perspective: 1000px;
+  /* Add a 3D perspective for the items */
 }
 
-.col-4 img{
-  width: 100px;
+/* Style for item images */
+.item img {
+  max-width: 100%;
+  /* Ensure images fit within item container */
+  height: auto;
+  /* Maintain aspect ratio of images */
+  transition: 0.4s;
+  transform-style: preserve-3d;
+  /* Preserve 3D transformations */
+
+}
+
+
+/* Style for item names */
+.item p {
+  font-weight: bold;
+  /* Make item names bold */
+  margin: 5px 0;
+  /* Add margin above and below item names */
+  color: white;
+}
+
+/* Style for the anchor links wrapping the images */
+.item a {
+  display: block;
+  /* Make the entire image area clickable */
+  text-decoration: none;
+  /* Remove underlines from links */
+}
+
+
+/* Style for item prices */
+.item .price {
+  color: green;
+  /* Set price text color to green */
+}
+
+/* Style for the marquee container */
+.marquee-container {
+  white-space: nowrap;
+  /* Prevent text wrapping within the container */
+  overflow: hidden;
+  /* Hide overflowing content */
+  background-color: black;
+  /* Background color for the marquee */
+}
+
+.item-marquee {
+  display: inline-block;
+  /* Display marquee content inline */
+}
+
+/* Hover effect for individual items */
+.item:hover img {
+  transform: rotateY(135deg);
+  /* Flip the image horizontally on hover */
+}
+
+h2 {
+  margin-top: 20px;
+  transition-duration: 0.5;
+}
+
+h2:hover {
+  color: red;
+}
+
+.row-container {
+  white-space: nowrap;
+  /* Prevent text wrapping within the container */
+  overflow: hidden;
+  /* Hide overflowing content */
+  background-color: black;
+}
+
+footer {
+  text-align: center;
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 10px 0; /* Add padding to the top and bottom of the footer */
 }
